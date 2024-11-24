@@ -4,62 +4,15 @@ import java.util.Scanner;
 
 
 /*
- * GUI will be implemented last
  * 
- * working on basic terminal functionality first
+ * 
+ * 
  * 
  * this will allow user to create main goals, add a minor goal to the main goal and remove main/minor goals
  * 
  * system.out.print is used for me to keep track if the code works. once the GUI is made this will be changed
  */
-public class TaskManagementApp {
-
-    static class Goal {
-        private String mainGoal;
-        private ArrayList<String> minorGoals;
-        private ArrayList<String> minorGoalsDesc;
-        private ArrayList<String> minorGoalsImportance;
-
-        public Goal(String mainGoal) {
-            this.mainGoal = mainGoal;
-            this.minorGoals = new ArrayList<>();
-            this.minorGoalsDesc = new ArrayList<>();
-            this.minorGoalsImportance = new ArrayList<>();
-        }
-        // getter methods
-        public String getMainGoal() {return mainGoal;}
-
-        //creating minor goal to a main goal
-        //add minor goal name
-        public void addMinorGoal(String minorGoal) {minorGoals.add(minorGoal);}
-        //add description of minor goal
-        public void addMinorGoalDesc(String minorGoalDesc) {minorGoalsDesc.add(minorGoalDesc);}
-        //add importance of minor goal
-        public void addMinorGoalImportance(String minorGoalImportance){minorGoalsImportance.add(minorGoalImportance);}
-        //remove minor goal
-        public void removeMinorGoal(int minorGoal){
-            minorGoals.remove(minorGoal);
-            minorGoalsDesc.remove(minorGoal);
-            minorGoalsImportance.remove(minorGoal);
-        }
-
-
-
-        public void displayGoals() {
-            System.out.println("main goal: " + mainGoal);
-            System.out.println("minor goal;");
-            int minorGoalNo = 1;
-            if (minorGoals.isEmpty()) { System.out.println("n/a "); } 
-            else {
-                for (int i = 0; i < minorGoals.size(); i++) {
-                    System.out.print(minorGoalNo+": "+minorGoals.get(i)+",");
-                    System.out.print(minorGoalsDesc.get(i)+",");
-                    System.out.print(minorGoalsImportance.get(i)+"\n");
-                    minorGoalNo++;
-                }
-            }
-        }
-    }
+public class TaskManager {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -132,6 +85,7 @@ public class TaskManagementApp {
                         System.out.println("\ngoal - " + (i + 1) + ":");
                         goals.get(i).displayGoals();
                     }
+                    System.out.println("choose minorgoal to remove");
                     int minorGoalIndex = scanner.nextInt() - 1;
                     goals.get(mainGoalIndex).removeMinorGoal(minorGoalIndex);
                     System.out.println("removed sueccess");
