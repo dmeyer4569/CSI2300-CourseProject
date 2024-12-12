@@ -15,4 +15,5 @@ to be updated (weekend prob) if it happens
   - this will be usefull to keep track of progress towards a set goal
 3.
   - 
-![image](![image](https://github.com/user-attachments/assets/b6522249-3853-49b1-8e7d-5311660e605a))
+
+![2024-12-11 20_35_30-Online FlowChart   Diagrams Editor - Mermaid Live Editor](https://github.com/user-attachments/assets/326a18c8-7920-48b8-b5b8-b0fe396e0ad8)
