@@ -15,4 +15,5 @@ to be updated (weekend prob) if it happens
   - this will be usefull to keep track of progress towards a set goal
 3.
   - 
-![image](https://github.com/user-attachments/assets/02c5f795-9a5a-4821-818a-66f84c31ea2f)
+![image](![image](https://github.com/user-attachments/assets/b6522249-3853-49b1-8e7d-5311660e605a)
+)
